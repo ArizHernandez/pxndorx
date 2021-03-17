@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="sources/images/icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/mobile.css" media="( max-width: 425px )">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px)">
   <meta name="theme-color" content="#3F59EE">
 </head>
 <body>
@@ -77,19 +78,19 @@
     </div>
   </header>
   
-  <section class="container mt-3" id="about">
-    <h3 class="text-center mb-1">¿Quienes somos?</h3>
-    <hr class="mt-0">
+  <section class="container mt-4" id="about">
+    <h2 class="text-center mb-1">¿Quienes somos?</h2>
+    <hr class="mt-0 mb-4">
     <div class="row mt-3">
-      <div class="col">
-        <h5 class="title">Nombre comercial y social de la empresa</h5>
-        <p>PXNDORX <small class="n">Desarrolladores de software</small></p>
+      <div class="col p-2 desc">
+        <h5 class="title text-md-center">Nombre comercial y social de la empresa</h5>
+        <p class="text-md-center">PXNDORX <small class="n d-block">(Desarrolladores de software)</small></p>
       </div>
     </div>
     <div class="row mt-2">
-      <div class="col">
-        <h5 class="title">¿que los motivo a establecerla?</h5>
-        <p>
+      <div class="col p-2">
+        <h5 class="title text-md-center">¿que los motivo a establecerla?</h5>
+        <p class="text-center">
           Lo que nos motivó a crear PXNDORX, fue ver los problemas que tienen las
           personas en la exactitud de llevar el control de sus tareas cotidianas, desde llevar
           la cuenta de sus sueldos como llevar el control de una empresa que esta en
@@ -100,34 +101,35 @@
       </div>
     </div> 
     <div class="row mt-2">
-      <div class="col">
-        <h5 class="title">Descripción de elementos</h5>
-        <ul>
-          <li><h5>Materiales:</h5> Host y un dominio para la página web y de presentación. 1
-            local para atender a los clientes que se encontrará en zona 2 de la ciudad capital.</li>
-          <li>
-            <h5>Humanos:</h5>
-            <ul>
-              <li>4 programadores</li>
-              <li>1 UX/UI Designer</li>
-              <li>1 Proyect owner</li>
-              <li>1 SCRUM Manager</li>
-            </ul> 
-          </li>
-          <li><h5>Financieros</h5> cómo va a estar compuesto su capital de trabajo.</li>
-          <li><h5>Técnicos</h5> cual es el procedimiento general para operar.</li>
-        </ul>
+      <div class="col p-2 desc">
+        <h5 class="title text-md-center">Descripción de elementos</h5>
+          <h5 class="text-center sub-title">Materiales</h5>
+           <p class="text-center">
+            Host y un dominio para la página web y de presentación / 1
+            local para atender a los clientes que se encontrará en zona 2 de la ciudad capital.
+            </p>
+            <h5 class="text-center sub-title">Humanos:</h5>
+              <p class="text-center">4 programadores / 1 UX-UI Designer / 1 Proyect owner / 1 SCRUM Manager</p>
+            </ul>
+          <h5 class="text-center">Financieros:</h5> 
+          <p class="text-center">
+            Cómo va a estar compuesto su capital de trabajo.
+          </p>
+          <h5 class="text-center">Técnicos:</h5> 
+          <p class="text-center">
+            Cual es el procedimiento general para operar.
+          </p>
       </div>
     </div> 
     <div class="row mt-2">
-      <div class="col">
-        <h5 class="title">¿Tipo de empresa y por que?</h5>
+      <div class="col p-2">
+        <h5 class="title text-md-center">¿Tipo de empresa y por que?</h5>
         <ul>
-          <li><b>orientada a las ganancias,</b> porque la finalidad de los socios es generar mayor
+          <li><h5 class="d-inline-block">Orientada a las ganancias: </h5> porque la finalidad de los socios es generar mayor
             capital.</li>
-          <li><b>Actividad económica:</b> Lucrativa porque su finalidad es generar ganancias.</li>
-          <li><b>Privada o pública:</b> Privada.</li>
-          <li><b>Según su tamaño, tomando en cuenta el acuerdo gubernativo 211-2015:</b> Esta
+          <li><h5 class="d-inline-block">Actividad económica:</h5> Lucrativa porque su finalidad es generar ganancias.</li>
+          <li><h5 class="d-inline-block">Privada o pública:</h5> Privada.</li>
+          <li><h5 class="d-inline-block">Según su tamaño, tomando en cuenta el acuerdo gubernativo 211-2015:</h5> Esta
             empresa está considerada como una microempresa ya que tiene únicamente 8
             trabajadores, los ventas anuales en cantidad de salarios mínimos serán inferiores
             a 190 y la venta anual estimada se encuentra por debajo de Q520,0000.</li>
@@ -136,13 +138,16 @@
     </div> 
     <div class="row mt-2">
       <div class="div">
-        <div class="image-container">
+        <div class="image-container mx-auto">
           <img class="w-100" src="sources/images/office.jpg" alt="Pxndorx office"> <!--https://unsplash.com/photos/YI_9SivVt_s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink-->
         </div>
       </div>
     </div>
   </section>
 
+  <footer class="text-center bg-dark mt-4 p-4">
+    <p class="m-0 text-white">&copy; Copyright - Pxndorx</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
