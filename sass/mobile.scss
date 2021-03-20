@@ -1,5 +1,6 @@
 *{
   font-family: 'Poppins', sans-serif;
+  color: #6d6d6d;
 }
 
 body{
@@ -59,6 +60,17 @@ header{
       }
     }
   }
+}
+
+.title{
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 600;
+  color: #202020;
+}
+
+.sub-title{
+  color: rgb(85, 85, 85);
 }
 
 #about{
