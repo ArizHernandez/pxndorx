@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px)">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,14 +95,15 @@
     <!-- Quienes somos -->
     <h2 class="text-center mb-1">¿Quiénes somos?</h2>
     <hr class="mt-0 mb-4">
-    <div class="row mt-3">
+    <!-- Nombre comercial -->
+    <div class="row mt-3 wow fadeInLeft">
       <div class="col p-2 desc">
         <h5 class="title text-center">Nombre comercial y social de la empresa</h5>
         <p class="text-center">PXNDORX <small class="n d-block">(Desarrolladores de software)</small></p>
       </div>
     </div>
     <!-- Que los motivo -->
-    <div class="row mt-2">
+    <div class="row mt-2 wow fadeInRight">
       <div class="col p-2">
         <h5 class="title text-center">¿que los motivó a establecerla?</h5>
         <p class="text-center">
@@ -118,52 +120,78 @@
     <div class="row mt-2">
       <div class="col p-2 desc">
         <h5 class="title text-center">Descripción de elementos</h5>
+
+        <article class="text-center wow fadeInDown">
           <h5 class="text-center">Materiales</h5>
-           <p class="text-center">
-            Host y un dominio para la página web y de presentación / 1
-            local para atender a los clientes que se encontrará en zona 2 de la ciudad capital.
-            </p>
-            <h5 class="text-center">Humanos:</h5>
-              <p class="text-center">4 programadores / 1 UX-UI Designer / 1 Proyect owner / 1 SCRUM Manager</p>
-            </ul>
-          <h5 class="text-center">Financieros:</h5> 
+          <p class="text-center" data-wow-delay=".15s">
+           Host y un dominio para la página web y de presentación / 1
+           local para atender a los clientes que se encontrará en zona 2 de la ciudad capital.
+          </p>
+        </article>
+
+        <article class="text-center wow fadeInDown">
+          <h5 class="text-center">Humanos:</h5>
           <p class="text-center">
+            4 programadores / 1 UX-UI Designer / 1 Proyect owner / 1 SCRUM Manager
+          </p>
+        </article>
+
+        <article>
+          <h5 class="text-center wow fadeInDown">Financieros:</h5> 
+          <p class="text-center wow fadeInDown" data-wow-delay=".15s">
             Cómo va a estar compuesto su capital de trabajo.
           </p>
+        </article>
+
+        <article class="text-center wow fadeInDown">
           <h5 class="text-center">Técnicos:</h5> 
           <p class="text-center">
             Cual es el procedimiento general para operar.
           </p>
+        </article>
+
       </div>
     </div> 
     <!-- Tipo de empresa -->
     <div class="row mt-2">
       <div class="col p-2">
         <h5 class="title text-center mb-3">¿Tipo de empresa y por que?</h5>
+        
+        <article class="text-center wow fadeInDown">
           <h5 class="text-center">Orientada a las ganancias: </h5> 
           <p class="text-center">
             porque la finalidad de los socios es generar mayor capital.
           </p>
+        </article>
+        
+        <article class="text-center wow fadeInDown">
           <h5 class="text-center">Actividad económica:</h5> 
           <p class="text-center">
             Lucrativa porque su finalidad es generar ganancias.
           </p>
+        </article>
+
+        <article class="text-center wow fadeInDown">
           <h5 class="text-center">Privada o pública:</h5> 
           <p class="text-center">
             Privada
           </p>
+        </article>
+
+        <article class="text-center wow fadeInUp">
           <h5 class="text-center">Según su tamaño, tomando en cuenta el acuerdo gubernativo 211-2015:</h5> 
           <p class="text-center">
             Esta empresa está considerada como una microempresa ya que tiene únicamente 8
             trabajadores, los ventas anuales en cantidad de salarios mínimos serán inferiores
             a 190 y la venta anual estimada se encuentra por debajo de Q520,0000.
           </p>
+        </article>
         </ul>
       </div>
     </div> 
     <!-- Imagen -->
     <div class="row mt-2">
-      <div class="div">
+      <div class="wow fadeIn">
         <div class="image-container mx-auto">
           <img class="w-100" src="sources/images/office.jpg" alt="Pxndorx office"> <!--https://unsplash.com/photos/YI_9SivVt_s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink-->
         </div>
@@ -175,6 +203,12 @@
   <footer class="text-center bg-dark mt-4 p-4">
     <p class="m-0 text-white">&copy; Copyright - Pxndorx</p>
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({ mobile: false });
+    wow.init();
+  </script>
 </body>
 </html>
